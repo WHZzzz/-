@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//src/com/action=UTF-8
+encoding//src/com/action/ApplyAddSave.java=UTF-8
+encoding//src/com/action/ApplyDel.java=UTF-8
+encoding//src/com/action/ApplyManager.java=UTF-8
+encoding//src/com/action/EquipmentAdd.java=UTF-8
+encoding//src/com/action/EquipmentAddSave.java=UTF-8
+encoding//src/com/action/EquipmentDel.java=UTF-8
+encoding//src/com/action/EquipmentManager.java=UTF-8
+encoding//src/com/action/EquipmentUpdate.java=UTF-8
+encoding//src/com/action/LabAddSave.java=UTF-8
+encoding//src/com/dao/ApplyDao.java=UTF-8
+encoding//src/com/dao/EquipFixDao.java=UTF-8
+encoding//src/com/dao/EquipmentDao.java=UTF-8
+encoding/WebContent=UTF-8

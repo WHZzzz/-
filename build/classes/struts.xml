@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="strutsqs" extends="struts-default" namespace="/" >
+		<action name="GoLogin" class="com.action.GoLogin">
+			<result name="input">/Login.jsp</result>
+			<result name="success">/Index.jsp</result>
+		</action>
+		<action name="Quit" class="com.action.Quit">
+			<result name="success">/Login.jsp</result>
+		</action>
+		<action name="PasswordUpdateSave" class="com.action.PasswordUpdateSave">
+			<result name="input">/PasswordUpdate.jsp</result>
+		</action>
+		
+		<action name="ApplyManager" class="com.action.ApplyManager">
+			<result name="success">/ApplyManager.jsp</result>
+		</action>
+		<action name="ApplyAddSave" class="com.action.ApplyAddSave">
+		</action>
+		
+		<action name="ApplyDel" class="com.action.ApplyDel">
+		  <result name="success" type="chain">ApplyManager</result>
+		</action>
+		
+	
+		
+		<action name="LabManager" class="com.action.LabManager">
+			<result name="success">/LabManager.jsp</result>
+		</action>
+		<action name="LabAddSave" class="com.action.LabAddSave">
+		</action>
+		<action name="LabUpdate" class="com.action.LabUpdate">
+		    <result name="success">/LabUpdate.jsp</result>
+		</action>
+		<action name="LabUpdateSave" class="com.action.LabUpdateSave">
+		</action>
+		<action name="LabDel" class="com.action.LabDel">
+		  <result name="success" type="chain">LabManager</result>
+		</action>
+		
+		<action name="EquipmentAdd" class="com.action.EquipmentAdd">
+			<result name="success">/EquipmentAdd.jsp</result>
+		</action>
+		<action name="EquipmentManager" class="com.action.EquipmentManager">
+			<result name="success">/EquipmentManager.jsp</result>
+		</action>
+		<action name="EquipmentAddSave" class="com.action.EquipmentAddSave">
+		</action>
+		<action name="EquipmentUpdate" class="com.action.EquipmentUpdate">
+		    <result name="success">/EquipmentUpdate.jsp</result>
+		</action>
+		<action name="EquipmentUpdateSave" class="com.action.EquipmentUpdateSave">
+		</action>
+		<action name="EquipmentDel" class="com.action.EquipmentDel">
+		  <result name="success" type="chain">EquipmentManager</result>
+		</action>
+		
+		<action name="EquipFixAdd" class="com.action.EquipFixAdd">
+			<result name="success">/EquipFixAdd.jsp</result>
+		</action>
+		<action name="EquipFixManager" class="com.action.EquipFixManager">
+			<result name="success">/EquipFixManager.jsp</result>
+		</action>
+		<action name="EquipFixAddSave" class="com.action.EquipFixAddSave">
+		</action>
+		<action name="EquipFixUpdate" class="com.action.EquipFixUpdate">
+		    <result name="success">/EquipFixUpdate.jsp</result>
+		</action>
+		<action name="EquipFixUpdateSave" class="com.action.EquipFixUpdateSave">
+		</action>
+		<action name="EquipFixDel" class="com.action.EquipFixDel">
+		  <result name="success" type="chain">EquipFixManager</result>
+		</action>
+		
+	
+		
+	</package>
+</struts>    
